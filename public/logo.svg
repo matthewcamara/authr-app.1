@@ -1,0 +1,27 @@
+<svg viewBox="0 0 200 110" width="200" height="110" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fedora hat -->
+  <g transform="translate(10, 5)">
+    <ellipse cx="70" cy="88" rx="68" ry="10" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+    <path d="M 24 88 C 20 88 18 60 22 40 C 26 22 40 14 70 14 C 100 14 114 22 118 40 C 122 60 120 88 116 88" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+    <path d="M 22 40 Q 70 30 118 40" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+    <path d="M 38 40 Q 70 48 102 40" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.6"/>
+    <line x1="26" y1="74" x2="114" y2="74" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+    <g transform="translate(88, 10) rotate(-20)">
+      <line x1="0" y1="0" x2="0" y2="72" stroke="#C9A84C" stroke-width="1.2"/>
+      <path d="M 0 8 Q -6 11 -10 14" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.8"/>
+      <path d="M 0 16 Q -8 20 -13 24" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.8"/>
+      <path d="M 0 24 Q -9 28 -14 33" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.8"/>
+      <path d="M 0 32 Q -9 36 -13 41" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.75"/>
+      <path d="M 0 40 Q -8 44 -11 49" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.65"/>
+      <path d="M 0 48 Q -6 52 -8 56" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+      <path d="M 0 54 Q -4 57 -5 61" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.35"/>
+      <path d="M 0 8 Q 6 11 10 14" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.8"/>
+      <path d="M 0 16 Q 8 20 13 24" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.8"/>
+      <path d="M 0 24 Q 9 28 14 33" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.8"/>
+      <path d="M 0 32 Q 9 36 13 41" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.75"/>
+      <path d="M 0 40 Q 8 44 11 49" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.65"/>
+      <path d="M 0 48 Q 6 52 8 56" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+      <path d="M 0 54 Q 4 57 5 61" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.35"/>
+    </g>
+  </g>
+</svg>
