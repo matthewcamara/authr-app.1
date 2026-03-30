@@ -323,14 +323,33 @@ export default function WaitlistPage() {
         ))}
       </div>
 
-      {/* Already have an account link */}
-      <div style={{ textAlign: "center" }}>
+      {/* Demo + Login links */}
+      <div style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
+        <a
+          href="/dashboard"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            padding: "13px 28px",
+            borderRadius: 10,
+            border: "1px solid rgba(255,255,255,0.2)",
+            background: "rgba(255,255,255,0.08)",
+            color: "white",
+            fontSize: 14,
+            fontWeight: 600,
+            textDecoration: "none",
+            backdropFilter: "blur(10px)",
+          }}
+        >
+          🚀 Explore the Platform Demo
+        </a>
+        <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>
+          No account needed · See everything before you sign up
+        </p>
         <p style={{ margin: 0, fontSize: 13, color: "rgba(255,255,255,0.4)" }}>
           Already have an account?{" "}
-          <a
-            href="/login"
-            style={{ color: "#C9A84C", textDecoration: "none", fontWeight: 600 }}
-          >
+          <a href="/login" style={{ color: "#C9A84C", textDecoration: "none", fontWeight: 600 }}>
             Log in →
           </a>
         </p>

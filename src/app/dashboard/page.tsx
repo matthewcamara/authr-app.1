@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
+import BetaBanner from "@/components/BetaBanner";
 import DashboardPage from "@/components/pages/DashboardPage";
 import MetadataPage from "@/components/pages/MetadataPage";
 import CRMPage from "@/components/pages/CRMPage";
@@ -31,9 +32,12 @@ export default function DashboardLayout() {
   return (
     <div className="flex h-screen w-full overflow-hidden" style={{ fontFamily: "var(--font-body)" }}>
       <Sidebar activeSection={activeSection} onNavigate={setActiveSection} />
-      <main className="flex-1 overflow-hidden flex flex-col">
-        <ActivePage />
-      </main>
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <BetaBanner />
+        <main className="flex-1 overflow-hidden flex flex-col">
+          <ActivePage />
+        </main>
+      </div>
     </div>
   );
 }

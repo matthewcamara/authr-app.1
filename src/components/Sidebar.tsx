@@ -50,6 +50,7 @@ export default function Sidebar({ activeSection, onNavigate }: SidebarProps) {
           .single();
         if (data) setProfile(data as Profile);
       }
+      // If no user, profile stays null — sidebar shows demo state
     }
     loadProfile();
   }, [supabase]);
@@ -60,22 +61,17 @@ export default function Sidebar({ activeSection, onNavigate }: SidebarProps) {
   };
 
   const initials = profile?.display_name
-    ? profile.display_name
-        .split(" ")
-        .map((w) => w[0])
-        .join("")
-        .toUpperCase()
-        .slice(0, 2)
-    : "??";
+    ? profile.display_name.split(" ").map((w) => w[0]).join("").toUpperCase().slice(0, 2)
+    : "D";
+
+  const displayName = profile?.display_name || "Demo Mode";
 
   const planLabel =
-    profile?.plan_status === "trial"
-      ? "Free Trial"
-      : profile?.plan_status === "active"
-        ? "Beta Plan"
-        : profile?.plan_status === "cancelled"
-          ? "Cancelled"
-          : "Free Trial";
+    profile?.plan_status === "trial" ? "Free Trial"
+    : profile?.plan_status === "active" ? "Beta Plan"
+    : profile?.plan_status === "cancelled" ? "Cancelled"
+    : !profile ? "Exploring Demo"
+    : "Free Trial";
 
   return (
     <div
@@ -195,7 +191,7 @@ export default function Sidebar({ activeSection, onNavigate }: SidebarProps) {
           </div>
           <div className="flex-1 min-w-0">
             <p className="m-0 text-white truncate" style={{ fontSize: 12, fontWeight: 600 }}>
-              {profile?.display_name || "Loading..."}
+              {displayName}
             </p>
             <p className="m-0" style={{ fontSize: 10, color: "rgba(255,255,255,0.45)" }}>
               {planLabel}
