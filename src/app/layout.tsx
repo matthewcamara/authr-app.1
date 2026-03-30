@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`h-full ${dmSans.variable} ${playfair.variable}`}>
-      <body className="h-full" style={{ fontFamily: "'DM Sans', 'Segoe UI', sans-serif" }}>
+    <html lang="en" className={`h-full ${dmSans.variable} ${playfair.variable}`} suppressHydrationWarning>
+      <body className="h-full" style={{ fontFamily: "'DM Sans', 'Segoe UI', sans-serif" }} suppressHydrationWarning>
         {children}
       </body>
     </html>
