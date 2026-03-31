@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { stripe } from "@/lib/stripe";
+import { getStripe } from "@/lib/stripe";
 import { createClient } from "@/lib/supabase/server";
 
 export async function POST() {
@@ -19,6 +19,8 @@ export async function POST() {
       .single();
 
     let customerId = profile?.stripe_customer_id;
+
+    const stripe = getStripe();
 
     if (!customerId) {
       const customer = await stripe.customers.create({
